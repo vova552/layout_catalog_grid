@@ -5,9 +5,9 @@
   gap: 48px;
 
   max-width: 944px;
-  margin: 0 auto;
+  @extend %margin;
 
-  @media (min-width: 487px) {
+  @media (min-width: 488px) {
     grid-template-columns: repeat(2, $cell-size);
   }
 
@@ -20,7 +20,7 @@
   }
 
   &__card {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     width: 200px;
